@@ -7,7 +7,7 @@ Last page: 0
 
 ### Chapters:
 01. Learn Go with Tests - ☑  
-02. Why unit tests and how to make them work for you - ☐  
+02. Why unit tests and how to make them work for you - ☑  
 03. Hello, World - ☐  
 04. Integers - ☐  
 05. Iteration - ☐  
