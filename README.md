@@ -4,9 +4,9 @@ https://github.com/quii/learn-go-with-tests
 Book version: 16.1.0  
 
 Last page: 0  
-☑
+
 ### Chapters:
-01. Learn Go with Tests - ☐  
+01. Learn Go with Tests - ☑  
 02. Why unit tests and how to make them work for you - ☐  
 03. Hello, World - ☐  
 04. Integers - ☐  
