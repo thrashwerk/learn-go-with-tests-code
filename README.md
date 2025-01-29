@@ -10,7 +10,7 @@ Last page: 29
 02. Why unit tests and how to make them work for you - ☑  
 03. Hello, World - ☑  
 04. Integers - ☑  
-05. Iteration - ☐  
+05. Iteration - ☑  
 06. Arrays and slices - ☐  
 07. Structs, methods & interfaces - ☐  
 08. Pointes & errors - ☐  
