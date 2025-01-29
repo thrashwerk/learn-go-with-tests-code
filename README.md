@@ -15,7 +15,7 @@ Last page: 92
 07. Structs, methods & interfaces - ☑  
 08. Pointes & errors - ☑  
 09. Maps - ☑  
-10. Dependency Injection - ☐  
+10. Dependency Injection - ☑  
 11. Mocking - ☐  
 12. Concurrency - ☐  
 13. Select - ☐  
