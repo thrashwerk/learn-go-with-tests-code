@@ -12,7 +12,7 @@ Last page: 49
 04. Integers - ☑  
 05. Iteration - ☑  
 06. Arrays and slices - ☑  
-07. Structs, methods & interfaces - ☐  
+07. Structs, methods & interfaces - ☑  
 08. Pointes & errors - ☐  
 09. Maps - ☐  
 10. Dependency Injection - ☐  
