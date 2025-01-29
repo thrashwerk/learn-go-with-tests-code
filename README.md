@@ -9,7 +9,7 @@ Last page: 29
 01. Learn Go with Tests - ☑  
 02. Why unit tests and how to make them work for you - ☑  
 03. Hello, World - ☑  
-04. Integers - ☐  
+04. Integers - ☑  
 05. Iteration - ☐  
 06. Arrays and slices - ☐  
 07. Structs, methods & interfaces - ☐  
