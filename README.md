@@ -11,7 +11,7 @@ Last page: 29
 03. Hello, World - ☑  
 04. Integers - ☑  
 05. Iteration - ☑  
-06. Arrays and slices - ☐  
+06. Arrays and slices - ☑  
 07. Structs, methods & interfaces - ☐  
 08. Pointes & errors - ☐  
 09. Maps - ☐  
