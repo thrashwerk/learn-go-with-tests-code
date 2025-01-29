@@ -13,7 +13,7 @@ Last page: 49
 05. Iteration - ☑  
 06. Arrays and slices - ☑  
 07. Structs, methods & interfaces - ☑  
-08. Pointes & errors - ☐  
+08. Pointes & errors - ☑  
 09. Maps - ☐  
 10. Dependency Injection - ☐  
 11. Mocking - ☐  
