@@ -16,7 +16,7 @@ Last page: 98
 08. Pointes & errors - ☑  
 09. Maps - ☑  
 10. Dependency Injection - ☑  
-11. Mocking - ☐  
+11. Mocking - ☑  
 12. Concurrency - ☐  
 13. Select - ☐  
 14. Reflection - ☐  
