@@ -17,7 +17,7 @@ Last page: 113
 09. Maps - ☑  
 10. Dependency Injection - ☑  
 11. Mocking - ☑  
-12. Concurrency - ☐  
+12. Concurrency - ☑  
 13. Select - ☐  
 14. Reflection - ☐  
 15. Sync - ☐  
