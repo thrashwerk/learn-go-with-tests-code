@@ -3,7 +3,7 @@ https://github.com/quii/learn-go-with-tests
 
 Book version: 16.1.0  
 
-Last page: 113  
+Last page: 133  
 
 ### Chapters:
 01. Learn Go with Tests - ☑  
