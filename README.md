@@ -18,7 +18,7 @@ Last page: 113
 10. Dependency Injection - ☑  
 11. Mocking - ☑  
 12. Concurrency - ☑  
-13. Select - ☐  
+13. Select - ☑  
 14. Reflection - ☐  
 15. Sync - ☐  
 16. Context - ☐  
