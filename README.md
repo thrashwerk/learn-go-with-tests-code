@@ -20,7 +20,7 @@ Last page: 133
 12. Concurrency - ☑  
 13. Select - ☑  
 14. Reflection - ☑  
-15. Sync - ☐  
+15. Sync - ☑  
 16. Context - ☐  
 17. Roman Numerals - ☐  
 18. Mathematics - ☐  
