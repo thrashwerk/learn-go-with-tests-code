@@ -19,7 +19,7 @@ Last page: 133
 11. Mocking - ☑  
 12. Concurrency - ☑  
 13. Select - ☑  
-14. Reflection - ☐  
+14. Reflection - ☑  
 15. Sync - ☐  
 16. Context - ☐  
 17. Roman Numerals - ☐  
