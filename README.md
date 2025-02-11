@@ -22,7 +22,7 @@ Last page: 159
 14. Reflection - ☑  
 15. Sync - ☑  
 16. Context - ☑  
-17. Roman Numerals - ☐  
+17. Roman Numerals - ☑  
 18. Mathematics - ☐  
 19. Reading files - ☐  
 20. HTML templates - ☐  
