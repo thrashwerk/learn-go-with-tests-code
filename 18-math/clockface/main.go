@@ -4,10 +4,10 @@ import (
 	"os"
 	"time"
 
-	clockface "github.com/thrashwerk/learn-go-with-tests-code/18-math"
+	"github.com/thrashwerk/learn-go-with-tests-code/18-math/svg"
 )
 
 func main() {
 	t := time.Now()
-	clockface.SVGWriter(os.Stdout, t)
+	svg.Write(os.Stdout, t)
 }
