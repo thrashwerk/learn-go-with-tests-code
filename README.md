@@ -24,7 +24,7 @@ Last page: 159
 16. Context - ☑  
 17. Roman Numerals - ☑  
 18. Mathematics - ☑  
-19. Reading files - ☐  
+19. Reading files - ☑  
 20. HTML templates - ☐  
 21. Generics - ☐  
 22. Revisiting arrays and slices with generics - ☐  
