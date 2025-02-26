@@ -5,6 +5,9 @@ import (
 	"html/template"
 	"io"
 	"strings"
+
+	"github.com/gomarkdown/markdown"
+	"github.com/gomarkdown/markdown/parser"
 )
 
 var (
@@ -24,7 +27,8 @@ func (p Post) SanitizedTitle() string {
 }
 
 type PostRenderer struct {
-	tmpl *template.Template
+	tmpl     *template.Template
+	mdParser *parser.Parser
 }
 
 func NewPostRenderer() (*PostRenderer, error) {
@@ -33,21 +37,28 @@ func NewPostRenderer() (*PostRenderer, error) {
 		return nil, err
 	}
 
-	return &PostRenderer{tmpl: tmpl}, nil
+	extensions := parser.CommonExtensions | parser.AutoHeadingIDs
+	parser := parser.NewWithExtensions(extensions)
+
+	return &PostRenderer{tmpl: tmpl, mdParser: parser}, nil
 }
 
 func (r *PostRenderer) Render(w io.Writer, p Post) error {
-	return r.tmpl.ExecuteTemplate(w, "blog.tmpl.html", p)
+	return r.tmpl.ExecuteTemplate(w, "blog.tmpl.html", newPostVM(p, r))
 }
 
 func (r *PostRenderer) RenderIndex(w io.Writer, posts []Post) error {
 	return r.tmpl.ExecuteTemplate(w, "index.tmpl.html", posts)
 }
 
-// type PostViewModel struct {
-// 	Title          string
-// 	SanitizedTitle string
-// 	Description    string
-// 	Body           string
-// 	Tags           []string
-// }
+type postViewModel struct {
+	Post
+	HTMLBody template.HTML
+}
+
+func newPostVM(p Post, r *PostRenderer) postViewModel {
+	vm := postViewModel{Post: p}
+	vm.HTMLBody = template.HTML(markdown.ToHTML([]byte(p.Body), r.mdParser, nil))
+
+	return vm
+}
