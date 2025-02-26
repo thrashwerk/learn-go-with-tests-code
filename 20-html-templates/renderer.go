@@ -18,13 +18,21 @@ type Post struct {
 	Tags        []string
 }
 
-func Render(w io.Writer, p Post) error {
-	templ, err := template.ParseFS(postTemplates, "templates/*.tmpl.html")
+type PostRenderer struct {
+	tmpl *template.Template
+}
+
+func NewPostRenderer() (*PostRenderer, error) {
+	tmpl, err := template.ParseFS(postTemplates, "templates/*.tmpl.html")
 	if err != nil {
-		return err
+		return nil, err
 	}
 
-	if err := templ.ExecuteTemplate(w, "blog.tmpl.html", p); err != nil {
+	return &PostRenderer{tmpl: tmpl}, nil
+}
+
+func (r *PostRenderer) Render(w io.Writer, p Post) error {
+	if err := r.tmpl.ExecuteTemplate(w, "blog.tmpl.html", p); err != nil {
 		return err
 	}
 
