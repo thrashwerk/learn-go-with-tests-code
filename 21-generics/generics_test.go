@@ -18,7 +18,7 @@ func TestAssertFunctions(t *testing.T) {
 
 func TestStack(t *testing.T) {
 	t.Run("integer stack", func(t *testing.T) {
-		myStackOfInts := new(StackOfInts)
+		myStackOfInts := NewStack[int]()
 
 		AssertTrue(t, myStackOfInts.IsEmpty())
 
@@ -33,23 +33,11 @@ func TestStack(t *testing.T) {
 		AssertEqual(t, v, 123)
 
 		AssertTrue(t, myStackOfInts.IsEmpty())
-	})
 
-	t.Run("string stack", func(t *testing.T) {
-		myStackOfStrings := new(StackOfStrings)
-
-		AssertTrue(t, myStackOfStrings.IsEmpty())
-
-		myStackOfStrings.Push("123")
-		AssertFalse(t, myStackOfStrings.IsEmpty())
-
-		myStackOfStrings.Push("456")
-		v, _ := myStackOfStrings.Pop()
-		AssertEqual(t, v, "456")
-
-		v, _ = myStackOfStrings.Pop()
-		AssertEqual(t, v, "123")
-
-		AssertTrue(t, myStackOfStrings.IsEmpty())
+		myStackOfInts.Push(1)
+		myStackOfInts.Push(2)
+		n1, _ := myStackOfInts.Pop()
+		n2, _ := myStackOfInts.Pop()
+		AssertEqual(t, n1+n2, 3)
 	})
 }
