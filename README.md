@@ -3,7 +3,7 @@ https://github.com/quii/learn-go-with-tests
 
 Book version: 16.1.0  
 
-Last page: 287  
+Last page: 302  
 
 ### Chapters:
 01. Learn Go with Tests - ☑  
@@ -26,7 +26,7 @@ Last page: 287
 18. Mathematics - ☑  
 19. Reading files - ☑  
 20. HTML templates - ☑  
-21. Generics - ☐  
+21. Generics - ☑  
 22. Revisiting arrays and slices with generics - ☐  
 23. Introduction to acceptance testing - ☐  
 24. Scaling acceptance tests - ☐  
